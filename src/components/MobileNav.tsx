@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -16,8 +17,9 @@ const MobileNav = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-14 md:h-16">
-        <a href="#hero" className="font-heading text-lg font-bold text-primary">
-          Ronak Bakery
+        <a href="#hero" className="flex items-center gap-2">
+          <img src={logo} alt="Ronak Bakery" className="h-9 md:h-11 w-auto" />
+          <span className="font-heading text-lg font-bold text-primary">Ronak Bakery</span>
         </a>
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
