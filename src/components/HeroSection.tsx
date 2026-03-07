@@ -13,34 +13,34 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           <img src={logo} alt="Ronak Bakery & Farsan" className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 drop-shadow-[0_0_20px_hsl(var(--primary)/0.4)]" />
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
             Freshly Baked<br />
             <span className="text-gradient-gold">Every Day</span>
           </h1>
-          <p className="text-muted-foreground text-base md:text-lg max-w-md mx-auto mb-8">
-            Serving Fresh Bakery & Farsan with Authentic Taste
+          <p className="text-muted-foreground text-base md:text-lg max-w-md mx-auto mb-8 px-[5px] text-center">Serving Fresh Bakery & Farsan Products with Authentic Taste Since 1994
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#products"
-              className="bg-gradient-gold text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-gold hover:shadow-gold-lg transition-all duration-300 text-base"
-            >
+              className="bg-gradient-gold text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-gold hover:shadow-gold-lg transition-all duration-300 text-base">
+              
               View Menu
             </a>
             <a
               href="#visit"
-              className="border border-primary text-primary font-semibold px-8 py-3 rounded-lg hover:bg-primary/10 transition-all duration-300 text-base"
-            >
+              className="border border-primary text-primary font-semibold px-8 py-3 rounded-lg hover:bg-primary/10 transition-all duration-300 text-base">
+              
               Visit Store
             </a>
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
