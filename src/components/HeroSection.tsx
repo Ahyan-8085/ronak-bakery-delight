@@ -15,9 +15,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-heading text-primary text-lg md:text-xl tracking-widest uppercase mb-2">
-            Ronak Bakery & Farsan
-          </h2>
+          <img src={logo} alt="Ronak Bakery & Farsan" className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 drop-shadow-[0_0_20px_hsl(var(--primary)/0.4)]" />
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
             Freshly Baked<br />
             <span className="text-gradient-gold">Every Day</span>
